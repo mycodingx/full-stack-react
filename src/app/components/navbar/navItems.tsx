@@ -25,7 +25,7 @@ cursor-pointer
 transition
 duration-300
 ease-in-out
-hover:text-gray-700
+hover:text-red-600
 `};
 
   ${({ menu }) =>
@@ -36,6 +36,7 @@ hover:text-gray-700
       text-xl
       mb-3
       focus:text-white
+      hover:text-red-600
     `};
     `};
 `;
