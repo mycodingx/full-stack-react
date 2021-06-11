@@ -24,7 +24,7 @@ const Image = styled.div`
   width: auto;
   ${tw`
   h-6 md:h-9
-  `}
+  `};
 
   img {
     width: auto;
@@ -36,7 +36,7 @@ export function Logo() {
   return (
     <LogoContainer>
       <Image>
-        <img src={LogoImg} />
+        <img src={LogoImg} alt="logo" />
       </Image>
       <LogoText>Yourcar.</LogoText>
     </LogoContainer>
