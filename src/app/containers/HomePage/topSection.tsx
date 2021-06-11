@@ -5,6 +5,7 @@ import tw from "twin.macro";
 import CarImg from "../../../assets/images/mclaren-orange-big.png";
 import BlobImg from "../../../assets/images/blob.svg";
 import { SCREENS } from "../../components/responsive/index";
+import { Button } from "../../components/button";
 
 const TopSectionContainer = styled.div`
   min-height: 400px;
@@ -139,6 +140,14 @@ const StandaloneImage = styled.div`
   }
 `;
 
+const ButtonsContainer = styled.div`
+  ${tw`
+flex
+mt-4
+flex-wrap
+`}
+`;
+
 export function TopSection() {
   return (
     <TopSectionContainer>
@@ -146,8 +155,13 @@ export function TopSection() {
         <Slogan>What is Lorem Ipsum?</Slogan>
         <Description>
           Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry.
+          industry.Lorem Ipsum has been the industry's standard dummy text ever
+          since the 1500s,
         </Description>
+        <ButtonsContainer>
+          <Button text="View More" />
+          <Button text="Contact Us" theme="filled" />
+        </ButtonsContainer>
       </LeftContainer>
       <RightContainer>
         <BlobContainer>
